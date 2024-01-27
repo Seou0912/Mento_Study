@@ -57,16 +57,16 @@ def gugu(num):
         text_list.append(f"{num} x {i} ={num*i}")
     return render_template(template_name_or_list="gugu.html", text_list=text_list)
 
-@app.route('/calculator/<int:num>')
+
+@app.route("/calculator/<int:num>")
 def calculator():
     if num == 0:
-    abort(404)
+        abort(404)
 
     # if int(num) % 2 == 0:
     #     result = '짝수입니다.'
-    
-    return render_template(template_name_or_list='calculator.html', result=result)
 
+    return render_template(template_name_or_list="calculator.html", result=result)
 
 
 if __name__ == "__main__":
