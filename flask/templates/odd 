@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>짝 홀 계산기</title>
+  </head>
+  <body>
+    
+    {% if num % 2 != 0 %}
+        홀수입니다.
+    {% else %}
+        짝수입니다.
+    {% endif %}
+  </body>
+</html>
